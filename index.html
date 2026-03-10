@@ -13,33 +13,36 @@ body{
 font-family: Arial, sans-serif;
 margin:0;
 padding:0;
-background:#f4f4f4;
+
+/* FULL WEBSITE BACKGROUND IMAGE */
+
+background-image:url("shop.jpg.png");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
 }
 
 /* HERO SECTION */
 
 header{
-background-image:url("shop.jpg");
-background-size:cover;
-background-position:center;
 height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
 }
 
 /* HERO TEXT */
 
 header h1{
-font-size:48px;
+font-size:50px;
 margin-bottom:10px;
 }
 
 header p{
-font-size:20px;
+font-size:22px;
 margin-bottom:20px;
 }
 
@@ -61,13 +64,17 @@ font-size:16px;
 section{
 padding:40px 20px;
 margin:20px;
-background:white;
+
+/* TRANSPARENT BACKGROUND */
+
+background:rgba(0,0,0,0.6);
+
 border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 3px 8px rgba(0,0,0,0.4);
 }
 
 h2{
-color:#2e7d32;
+color:#7CFC00;
 text-align:center;
 margin-bottom:20px;
 }
@@ -81,7 +88,7 @@ gap:20px;
 }
 
 .product-box{
-background:#f9f9f9;
+background:rgba(255,255,255,0.15);
 padding:20px;
 border-radius:8px;
 text-align:center;
@@ -99,14 +106,14 @@ text-align:center;
 
 .feature-box{
 padding:20px;
-background:#f9f9f9;
+background:rgba(255,255,255,0.15);
 border-radius:8px;
 }
 
 /* FOOTER */
 
 footer{
-background:#1b5e20;
+background:rgba(0,0,0,0.8);
 color:white;
 text-align:center;
 padding:20px;
@@ -118,8 +125,6 @@ margin-top:30px;
 </head>
 
 <body>
-
-<!-- HERO SECTION -->
 
 <header>
 
@@ -133,7 +138,6 @@ margin-top:30px;
 
 </header>
 
-<!-- ABOUT -->
 
 <section>
 
@@ -148,7 +152,6 @@ products to every family in our village.
 
 </section>
 
-<!-- PRODUCTS -->
 
 <section>
 
@@ -169,7 +172,6 @@ products to every family in our village.
 
 </section>
 
-<!-- WHY CHOOSE US -->
 
 <section>
 
@@ -201,7 +203,6 @@ products to every family in our village.
 
 </section>
 
-<!-- STORE INFO -->
 
 <section>
 
@@ -217,7 +218,6 @@ products to every family in our village.
 
 </section>
 
-<!-- FOOTER -->
 
 <footer>
 
