@@ -1,93 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagdamba Kirana Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header header {
-background-image: url("shop.jpg");
-background-size: cover;
-background-position: center;
-color: white;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-text-align: center;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jagdamba Kirana Store</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f4f4f4;
 }
-        section {
-            padding: 20px;
-            margin: 10px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2e7d32;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            margin: 5px 5px 0 5px;
-            background-color: #2e7d32;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #1b5e20;
-            color: white;
-        }
-    </style>
+
+/* HERO SECTION */
+
+header{
+background-image:url("shop.jpg");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background-color:rgba(0,0,0,0.5);
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin:5px;
+background:#2e7d32;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:16px;
+}
+
+/* SECTIONS */
+
+section{
+padding:40px 20px;
+margin:20px;
+background:white;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+color:#2e7d32;
+text-align:center;
+margin-bottom:20px;
+}
+
+/* PRODUCTS GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.product-box{
+background:#f9f9f9;
+padding:20px;
+border-radius:8px;
+text-align:center;
+font-weight:bold;
+}
+
+/* FEATURES */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.feature-box{
+padding:20px;
+background:#f9f9f9;
+border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
 </head>
+
 <body>
 
+<!-- HERO -->
+
 <header>
-    <div class="hero"></div>
-    <h1>Jagdamba Kirana Store</h1>
-    <p>Fresh Groceries at Best Prices in Malas Gusaiyan</p>
-   <a href="tel:9252220186" class="btn">Call Now</a>
-    <a href="https://wa.me/919252220186" class="btn">WhatsApp</a>
+
+<h1>Jagdamba Kirana Store</h1>
+
+<p>Fresh Groceries at Best Prices in Malas Gusaiyan</p>
+
+<a href="tel:9252220186" class="btn">Call Now</a>
+
+<a href="https://wa.me/919252220186" class="btn">WhatsApp</a>
+
 </header>
 
-<section>
-    <h2>About Us</h2>
-    <p>Welcome to Jagdamba Kirana Store, located in Malas Gusaiyan, Parbatsar, Rajasthan. 
-    We provide quality groceries, daily essentials, and household products at affordable prices. 
-    Trusted by families in our area.</p>
-</section>
+
+<!-- ABOUT -->
 
 <section>
-    <h2>Our Products</h2>
-    <ul>
-        <li>Atta, Rice & Dal</li>
-        <li>Oil & Ghee</li>
-        <li>Snacks & Biscuits</li>
-        <li>Dairy Products</li>
-        <li>Daily Use Household Items</li>
-    </ul>
+
+<h2>About Our Store</h2>
+
+<p style="text-align:center;">
+Welcome to Jagdamba Kirana Store located in Malas Gusaiyan, Parbatsar. 
+We provide high quality groceries, daily essentials and household products 
+at affordable prices. Our goal is to provide the best service and trusted 
+products to every family in our village.
+</p>
+
 </section>
 
+
+<!-- PRODUCTS -->
+
 <section>
-    <h2>Store Information</h2>
-    <p><strong>Address:</strong> Malas Gusaiyan, Parbatsar, Rajasthan - 341512</p>
-    <p><strong>Phone:</strong> 9252220186</p>
-    <p><strong>Timings:</strong> 8:00 AM – 8:00 PM</p>
-    <p><strong>Home Delivery:</strong> Currently Not Available</p>
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="product-box">Atta & Flour</div>
+
+<div class="product-box">Rice & Dal</div>
+
+<div class="product-box">Cooking Oil</div>
+
+<div class="product-box">Ghee & Dairy</div>
+
+<div class="product-box">Biscuits & Snacks</div>
+
+<div class="product-box">Tea & Sugar</div>
+
+<div class="product-box">Masala & Spices</div>
+
+<div class="product-box">Daily Household Items</div>
+
+</div>
+
 </section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<h2>Why Choose Our Store</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Quality Products</h3>
+<p>We provide trusted brands and quality groceries.</p>
+</div>
+
+<div class="feature-box">
+<h3>Affordable Prices</h3>
+<p>Best prices for all daily grocery items.</p>
+</div>
+
+<div class="feature-box">
+<h3>Trusted by Families</h3>
+<p>Serving our village families with honesty.</p>
+</div>
+
+<div class="feature-box">
+<h3>All Essentials</h3>
+<p>Everything you need for your home in one place.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STORE INFO -->
+
+<section>
+
+<h2>Store Information</h2>
+
+<p><strong>Address:</strong> Malas Gusaiyan, Parbatsar, Rajasthan - 341512</p>
+
+<p><strong>Phone:</strong> 9252220186</p>
+
+<p><strong>Timings:</strong> 8:00 AM – 8:00 PM</p>
+
+<p><strong>Home Delivery:</strong> Available in nearby area</p>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-    <p>© 2026 Jagdamba Kirana Store. All Rights Reserved.</p>
+
+<p>© 2026 Jagdamba Kirana Store | All Rights Reserved</p>
+
 </footer>
 
 </body>
